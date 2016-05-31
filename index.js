@@ -21,7 +21,6 @@ toCheck.forEach(function(engine) {
     console.warn("'%s' engine missing in package.json");
   }
   else {
-    console.log(semver.validRange(pkg.engines[engine]));
     var passes = semver.satisfies(version[engine], pkg.engines[engine]);
     if(!passes) {
       console.error("'"+engine+"' ("+version[engine]+") does not satisfy "+pkg.engines[engine]);
