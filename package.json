@@ -1,0 +1,10 @@
+{
+  "name": "version-check",
+  "version": "0.0.0",
+  "dependencies": {
+    "semver": "^5.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}
