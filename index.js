@@ -18,7 +18,7 @@ var hasErrored = false;
 
 toCheck.forEach(function(engine) {
   if(!pkg.engines.hasOwnProperty(engine)) {
-    console.warn("'%s' engine missing in package.json");
+    console.warn("'%s' engine missing in package.json", engine);
   }
   else {
     var passes = semver.satisfies(version[engine], pkg.engines[engine]);
